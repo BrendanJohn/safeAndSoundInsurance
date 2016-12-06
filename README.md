@@ -1,7 +1,7 @@
 # safeAndSoundInsurance
 
 ## Temporary Live URL
-N/A at this time
+https://brendanjohn.github.io/safeAndSoundInsurance/
 
 ## Description
 Final project for CSCI E-34 User Experience Engineering
