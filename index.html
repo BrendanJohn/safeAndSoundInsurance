@@ -15,7 +15,7 @@
   </head>
   <body>
   	<div class="container">
-	  	<div class="page-header"><a href="./"><h3>Safe and Sound Insurance Corporaion</h3></a></div>
+	  	<div class="page-header"><a href="./"><h3>Safe and Sound Insurance Corporation</h3></a></div>
 	    <div class="row">
 	    	<div class="col-md-4 panel">
 	    		<p><img class="img" alt="200x200" style="width: 250px; height: 150px;" src="images/lady-talking-phone.jpg" data-holder-rendered="true"></p>
@@ -34,24 +34,24 @@
 		    		<h2>Inbound Call from Customer..</h2>
 			    		<div class="row">
 			    			<div class="col-md-6">
-				    			<a href="/page2.html"><button type="button" class="btn btn-lg btn-primary"><span class="glyphicon glyphicon-earphone"></span>  Accept</button></a>
+				    			<button type="button" id="show" class="btn btn-lg btn-primary"><span class="glyphicon glyphicon-earphone"></span>  Accept</button>
 				    		</div>
 				    		<div class="col-md-6">
-								<button type="button" class="btn btn-lg btn-danger"><span class="glyphicon glyphicon-remove"></span> 	Decline</button>
+								<button type="button" class="btn btn-lg btn-danger" id="hide"><span class="glyphicon glyphicon-remove"></span> 	Decline</button>
 				    		</div>
 			    		</div>
 		    	</div>
-		    	<div class="secondary">
+		    	<div class="secondary" id="hidden">
 			    	<h2>Customer Association in Progress..</h2>
 			    	<p>Customer Name: Mary Dwyer</p>
 			    	<p>Last 4 Digits of Social Security Number: 3112</p>
 			    	<p>Is this Information Correct?</p>
 			    		<div class="row">
 			    			<div class="col-md-6">
-				    			<button type="button" class="btn btn-lg btn-default">Correct</button>
+				    			<a href="/page2.html"><button type="button" class="btn btn-lg btn-default">Correct</button></a>
 				    		</div>
 				    		<div class="col-md-6">
-								<button type="button" class="btn btn-lg btn-default">Incorrect</button>
+								<a href="/search.html"><button type="button" class="btn btn-lg btn-default">Incorrect</button></a>
 				    		</div>
 			    		</div>
 			    </div>
@@ -61,6 +61,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Latest compiled and minified JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	    <script src="scripts/script.js"></script>
   </body>
 </html>
 

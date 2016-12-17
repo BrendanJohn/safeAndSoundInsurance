@@ -11,5 +11,13 @@ $('.tabs a').click(function(e){
     $(tabgroup).children('div').hide();
     $(target).show();
   
-})
-    
+});
+
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("#hidden").hide();
+    });
+    $("#show").click(function(){
+        $("#hidden").show();
+    });
+});
