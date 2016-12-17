@@ -89,3 +89,7 @@ font-size: 14px;
 .right {
     float: right;
 }
+#field {
+    display: inline;
+    width: 40%;
+}
