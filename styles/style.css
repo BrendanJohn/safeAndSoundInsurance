@@ -1,3 +1,6 @@
+#noshadow {
+    box-shadow : none;
+}
 .wrapper {
   margin: 30px auto;
   width: 80%;
@@ -82,4 +85,7 @@ font-size: 14px;
 .paynow {
     float: right;
     display: block;
+}
+.right {
+    float: right;
 }
