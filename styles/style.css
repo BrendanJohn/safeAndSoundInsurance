@@ -75,3 +75,11 @@ font-family: Arial, Helvetica, sans-serif;
 line-height: 1.5;
 font-size: 14px;        
 }
+.update {
+    float: right;
+    display: inline-block;
+}
+.paynow {
+    float: right;
+    display: block;
+}
