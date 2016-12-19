@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Search for Customer</title>
+    <title>Call in Progress</title>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
@@ -33,104 +33,42 @@
                 <button type="button" class="btn btn-default" aria-label="Left Align">
                     <span class="glyphicon glyphicon-volume-up" aria-hidden="true"></span>
                 </button>
-                <h2>Call length 1:23</h2>
+                <h2>Call length: 1:23  <button type="button" class="btn btn-lg btn-danger" id="hide"><span class="glyphicon glyphicon-remove"></span>   End Call</button></h2>
             </div>
             <div class="col-md-8">
                 <div class="primary">
-                    <h2>Call in Progress with Mary Dwyer</h2>
-                    <div class="row">
-                        <div class="col-md-6">
-                            Named Insured: Mary Dwyer
+                    <h2>Call in Progress with Unknown</h2>
+                        <div id="custom-search-input">
+                            <div class="input-group col-md-12">
+                                <input type="text" class="form-control input-lg" placeholder="12345678, first name, last name, ETC" />
+                                <span class="input-group-btn">
+                                <button class="btn btn-info btn-lg" type="button" id="show">
+                                <i class="glyphicon glyphicon-search"></i>
+                                </button>
+                                </span>
                         </div>
-                        <div class="col-md-6">
-                            Address: 30 Independence Lane
-                            <br> Hingham MA, 02043
-                        </div>
-                    </div>
+            </div>
+                    <p>Search Results:</p>
+                     <table class="table" id="hidden">
+                        <thead>
+                          <tr>
+                            <th>Named Insured</th>
+                            <th>Policies</th>
+                            <th>Address</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Mary Dwyer</td>
+                            <td>3</td>
+                            <td>30 Independence Lane <a href="/page2.html"><button type="button" class="btn btn-default right">Load this Customer    </button></a</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    <p>End of results</p>
                 </div>
                 <div class="secondary">
-                    <div class="row">
-                        <div class="wrapper">
-                            <ul class="tabs clearfix" data-tabgroup="first-tab-group">
-                                <li><a href="#tab1" class="active">Mary`s Visa</a>
-                                </li>
-                                <li><a href="#tab2">Mary`s Checking</a>
-                                </li>
-                            </ul>
-                            <section id="first-tab-group" class="tabgroup">
-                                <div id="tab1">
-                                    <a href="/page3.html"><button type="button" class="btn btn-lg btn-primary update">Update Information</button></a>
-                                    <p>Name on Card: Mary Dwyer</p>
-                                    <p>Card Number: 1234 5678 1234 5678</p>
-                                    <p>Security Code: XXX</p>
-                                    <p>Expiration Date: 12/23/2016</p>
-                                </div>
-                                <div id="tab2">
-                                    <button type="button" class="btn btn-lg btn-primary update">Update Information</button>
-                                    <p>Name on Account: Mary Dwyer</p>
-                                    <p>Account Number: 1234 5678 1234 5678</p>
-                                    <p>Routing Number: 5678 1234 5678 1234</p>
-                                    <p>Expiration Date: 12/23/2016</p>
-                                </div>
-                            </section>
-                        </div>
-
-                        <div class="wrapper">
-                            <ul class="tabs clearfix" data-tabgroup="second-tab-group">
-                                <li><a href="#tab6" class="active">Policy 1</a>
-                                </li>
-                                <li><a href="#tab7">Policy 2</a>
-                                </li>
-                                <li><a href="#tab8">Policy 3</a>
-                                </li>
-                            </ul>
-                            <section id="second-tab-group" class="tabgroup">
-                                <div id="tab6">
-                                    <div class="row" id="noshadow">
-                                        <div class="col-md-6" id="noshadow">
-                                            <p>Automobile: 2009 Acura TL</p>
-                                            <p>Effective Date: 12/23/2015</p>
-                                            <p>Expiration Date: 12/23/2016</p>
-                                        </div>
-                                        <div class="col-md-6" id="noshadow">
-                                            <p>Current Amount Due: $18.00</p>
-                                            <p>Due Date: 12/19/2016</p>
-                                            <button type="button" class="btn btn-lg btn-primary">Pay Now</button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div id="tab7">
-                                    <div class="row" id="noshadow">
-                                        <div class="col-md-6" id="noshadow">
-                                            <p>Automobile: 2012 Mini Cooper</p>
-                                            <p>Effective Date: 12/23/2015</p>
-                                            <p>Expiration Date: 12/23/2016</p>
-                                        </div>
-                                        <div class="col-md-6" id="noshadow">
-                                            <p>Current Amount Due: $18.00</p>
-                                            <p>Due Date: 12/19/2016</p>
-                                            <button type="button" class="btn btn-lg btn-primary">Pay Now</button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div id="tab8">
-                                    <div class="row" id="noshadow">
-                                        <div class="col-md-6" id="noshadow">
-                                            <p>Automobile: 1989 Dodge Dakota</p>
-                                            <p>Effective Date: 12/23/2015</p>
-                                            <p>Expiration Date: 12/23/2016</p>
-                                        </div>
-                                        <div class="col-md-6" id="noshadow">
-                                            <p>Current Amount Due: $18.00</p>
-                                            <p>Due Date: 12/19/2016</p>
-                                            <button type="button" class="btn btn-lg btn-primary">Pay Now</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </section>
-                        </div>
-
-                    </div>
+ 
                 </div>
             </div>
         </div>
